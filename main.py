@@ -56,7 +56,7 @@ class TesteReacaoApp(App):
         self.label.text = "" #limpa o label de texto
         self.button.unbind(on_press=self.iniciar_teste_reacao) #desvincula o botao a chamada da funcao iniciar_teste_reacao para que o botao seja usadao p/ outra coisa agora
         
-        if self.i < 10: #contador de 10 vezes de testes
+        if self.i < 2: #contador de 10 vezes de testes
             self.label.text += "Prepare-se...\n" #escreve no label de texto
             Clock.schedule_once(self.inicio_pikachu, random.randint(2000,3500)/1000) #chama a funcao inicio_pikachu em um tempo aleatorio entre 2ms a 3,5ms p/ deixar aleatorio e mais desafiador
         else:
